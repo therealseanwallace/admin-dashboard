@@ -1,0 +1,90 @@
+/*RESET STYLES */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* STYLES */
+
+body {
+  display: grid;
+  grid: 135px 945px / 160px 1760px;
+  /*grid-template-rows: 135px 945px;
+    grid-template-columns: 160px 1760px;
+  */
+  grid-template-areas: 
+    "nav header"
+    "nav main";
+  height: 1080px;
+  width: 1920px;
+}
+
+.navbar-child > img, #search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1120px 720px
+}
+
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 620px) 360px;
+  grid-template-areas: 
+    "projects1 projects2 announcements";
+  column-gap: 40px;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.project-card {
+  height: 235px;
+  width: 640px;
+}
+
+.announcements {
+  height: 430px;
+}
+
+.trending {
+  height: 395px;
+}
+
+
