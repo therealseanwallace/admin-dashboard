@@ -30,61 +30,142 @@
 
 /* STYLES */
 
-body {
-  display: grid;
-  grid: 135px 945px / 160px 1760px;
-  /*grid-template-rows: 135px 945px;
-    grid-template-columns: 160px 1760px;
-  */
-  grid-template-areas: 
-    "nav header"
-    "nav main";
-  height: 1080px;
-  width: 1920px;
+.content {
+	display: grid;
+	grid: 168px 880px / 252px 1016px;
+	grid-template-areas: "nav header" "nav main";
+	height: 860px;
+	width: 1780x;
 }
 
 .navbar-child > img, #search-icon {
   width: 20px;
   height: 20px;
+  color: white;
 }
 
 .profile-pic {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
 }
 
+.profile-pic:first-of-type {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
 header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1120px 720px
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 724px 278px;
 }
 
 
 main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: repeat(2, 620px) 360px;
-  grid-template-areas: 
-    "projects1 projects2 announcements";
-  column-gap: 40px;
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.0fr;
+	column-gap: 20px;
+	background: #F0F1E9;
+	padding-left: 18px;
 }
 
-.announcements {
-  grid-area: announcements;
-}
+
 
 .project-card {
-  height: 235px;
-  width: 640px;
+  height: 228px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
 }
 
 .announcements {
-  height: 430px;
+  height: 344px;
 }
 
 .trending {
-  height: 395px;
+  height: 316px;
 }
 
 
+nav {
+	height: 1048px;
+	background: #1992d4;
+}
+
+header {
+  background: #fd3076;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+a:visited {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navbar-child > img, .search-div > img {
+  display: flex;
+  align-items: center;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(56deg) brightness(116%) contrast(107%);
+  margin-right: 20px;
+}
+
+nav > * {
+  margin-left: 20px;
+}
+
+nav > p {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+input[type="text"]{
+  width: 80%;
+  margin: 0px 20px 0px -10px;
+  border-radius: 20px;
+}
+
+
+
+#search-icon {
+  height: 26px;
+  width: 26px;
+}
+
+
+
+
+
+
+/*7FDCFE lightblue
+FD3076 pinkyred
+F0F1E9 eggshellish
+7BDDAB  minty
+8DD4BD lighterblue*/
