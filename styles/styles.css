@@ -30,6 +30,9 @@
 
 /* STYLES */
 
+* {
+  font-family: Montserrat, sans-serif;
+}
 .content {
 	display: grid;
 	grid: 168px 880px / 252px 1016px;
