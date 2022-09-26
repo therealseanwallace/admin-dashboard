@@ -13,16 +13,16 @@
 <body>
   <div class="content">
     <nav>
-      <p>Dashboard</p>
-      <div class="navbar-child" id="navbar-home"><img src="images/home.svg" alt=""><a href="">Home</a></div>
-      <div class="navbar-child" id="navbar-profile"><img src="images/cat.svg" alt=""><a href="">Profile</a></div>
-      <div class="navbar-child" id="navbar-messages"><img src="images/messages.svg" alt=""><a href="">Messages</a></div>
-      <div class="navbar-child" id="navbar-history"><img src="images/history.svg" alt=""><a href="">History</a></div>
-      <div class="navbar-child" id="navbar-tasks"><img src="images/tasks.svg" alt=""><a href="">Tasks</a></div>
-      <div class="navbar-child" id="navbar-communities"><img src="images/communities.svg" alt=""><a href="">Communities</a></div>
-      <div class="navbar-child" id="navbar-settings"><img src="images/settings.svg" alt=""><a href="">Settings</a></div>
-      <div class="navbar-child" id="navbar-support"><img src="images/support.svg" alt=""><a href="">Support</a></div>
-      <div class="navbar-child" id="navbar-privacy"><img src="images/privacy.svg" alt=""><a href="">Privacy</a></div>
+      <div class="dashboard-icon-text"><img class="invert-color" src="images/hamburger.svg" alt=""><p>Dashboard</p></div>
+      <div class="navbar-child" id="navbar-home"><img class="invert-color" src="images/home.svg" alt=""><a href="">Home</a></div>
+      <div class="navbar-child" id="navbar-profile"><img class="invert-color" src="images/cat.svg" alt=""><a href="">Profile</a></div>
+      <div class="navbar-child" id="navbar-messages"><img class="invert-color" src="images/messages.svg" alt=""><a href="">Messages</a></div>
+      <div class="navbar-child" id="navbar-history"><img class="invert-color" src="images/history.svg" alt=""><a href="">History</a></div>
+      <div class="navbar-child" id="navbar-tasks"><img class="invert-color" src="images/tasks.svg" alt=""><a href="">Tasks</a></div>
+      <div class="navbar-child" id="navbar-communities"><img class="invert-color" src="images/communities.svg" alt=""><a href="">Communities</a></div>
+      <div class="navbar-child" id="navbar-settings"><img class="invert-color" src="images/settings.svg" alt=""><a href="">Settings</a></div>
+      <div class="navbar-child" id="navbar-support"><img class="invert-color" src="images/support.svg" alt=""><a href="">Support</a></div>
+      <div class="navbar-child" id="navbar-privacy"><img class="invert-color" src="images/privacy.svg" alt=""><a href="">Privacy</a></div>
     </nav>
     <header>
       <div class="search-div">
@@ -30,12 +30,16 @@
         <input type="text">
       </div>
       <div class="profile-div">
-        <img src="images/alarm.svg" alt="">
+        <img src="images/bell.svg" alt="">
         <img src="images/donut-cat.jpg" alt="" class="profile-pic">
         <p>Donut Cat</p>
       </div>
       <div class="greeting-div">
         <img src="images/donut-cat.jpg" alt="" class="profile-pic">
+        <div>
+          <p>Hi there,</p>
+          <p>Donut Cat (@donutCat)</p>
+        </div>
       </div>
       <div class="menu">
         <input type="button" class="menu-button" value="New">
@@ -45,12 +49,10 @@
       </header>
       <main>
         <div class="projects1 projects">
-          <h3>Your projects</h3>
+          <h3 class="projects-h3">Your projects</h3>
           <div class="project-card project1">
-            <h4>Rub face on owner blow up sofa in 3 seconds.</h4>
-            <p>Sit in window and stare oooh, a bird, yum ask for petting 
-              hide when guests come over. Howl uncontrollably for no reason 
-              brown cats with pink ears</p>
+            <h4>Rub face on owner blow up sofa in 3 seconds</h4>
+            <p>Howl uncontrollably for no reason brown cats with pink ears</p>
           </div>
           <div class="project-card project2">
             <h4>Destroy house in 5 seconds chew iPad power cord</h4>
@@ -59,19 +61,16 @@
               because bad cat</p>
           </div>
           <div class="project-card project3">
-            <h4>Spill litter box, scratch at owner, destroy all furniture, e
-                specially couch</h4>
-            <p>Stick butt in face as lick i the shoes meowing non stop for 
-              food destroy couch as revenge. Curl up and sleep on the 
-              freshly laundered towels leave hair on owner's clothes.</p>
+            <h4>Spill litter box, scratch at owner, destroy all furniture</h4>
+            <p>meowing non stop for food destroy couch as revenge. Curl up 
+              and sleep on owner's clothes.</p>
           </div>
           
         </div>
         <div class="projects2 projects">
-          <h3>I can has cheeseburger?</h3>
+          <h3 class="projects-h3">I can has cheeseburger?</h3>
           <div class="project-card project4">
-            <h4>Plop down in the middle where everybody walks cat playing a 
-                fiddle in hey diddle diddle?</h4>
+            <h4>Plop down in the middle where everybody walks</h4>
             <p> why can't i catch that stupid red dot grab pompom in mouth 
                 and put in water dish or hiding behind the couch</p>
           </div>
@@ -82,28 +81,63 @@
               brown cats with pink ears</p>
           </div>
           <div class="project-card project6">
-            <h4>Howl on top of tall thing fight own tail for scream for no 
-                reason at 4 am.</h4>
-            <p>Weigh eight pounds but take up a full-size bed miaow then 
-                turn around and show you my bum groom forever, stretch tongue and leave it slightly out, blep. </p>
+            <h4>Howl on top of tall thing fight own tail scream for no 
+                reason at 4 am</h4>
+            <p>Weigh eight pounds but take up a full-size bed miaow</p>
           </div>
         </div>
         <div class="announcements-trending">
+          <h3>Announcements</h3>
           <div class="announcements">
-            <h3>Announcements</h3>
+            
             <div class="announcement-card">
-              <div class="announcement"></div>
-              <div class="announcement"></div>
-              <div class="announcement"></div>
+              <div class="announcement">
+                <h4>September 18 - National Cheeseburger Day</h4>
+                <p>i can haz drink water out of the faucet find empty spot in cupboard</p>
+              </div>
+              <hr>
+              <div class="announcement">
+                <h4>October 16 - Global Cat Day</h4>
+                <p>Meow in empty rooms mesmerizing birds spot something</p>
+              </div>
+              
+              <hr>
+              <div class="announcement">
+                <h4>October 29 - National Cat Day</h4>
+                <p>prepare to pounce or see owner, run in terror and eat half my food</p>
+              </div>
             </div>
           </div>
           <div class="trending">
             <h3>Trending</h3>
             <div class="trending-card">
-              <div class="trending-item"></div>
-              <div class="trending-item"></div>
-              <div class="trending-item"></div>
-              <div class="trending-item"></div>
+              <div class="trending-item">
+                <img src="images/donut-cat-2.jpg" class="trending-image" alt="">
+                <div>  
+                  <p>@mrmittens</p>
+                  <p>VP in Charge of Sprinkles</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <img src="images/donut-cat-6.png" class="trending-image" alt="">
+                <div>
+                  <p>@3amzoomies</p>
+                  <p>Chzburger Acquisitions</p>
+                </div>
+              </div>
+              <div class="trending-item">
+                <img src="images/nyan-donut.jpg" class="trending-image" alt="">
+                <div>
+                  <p>@nyan_donut</p>
+                  <p>Memes Lead</p>
+                </div>
+              </div>  
+              <div class="trending-item">
+                <img src="images/donut-cat-4.jpg" class="trending-image" alt="">
+                <div>
+                  <p>@jellybeantoes</p>
+                  <p>Chief Morale Officer</p>
+                </div>
             </div>
           </div>
         </div>
