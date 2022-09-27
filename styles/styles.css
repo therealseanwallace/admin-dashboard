@@ -33,12 +33,13 @@
 * {
   font-family: Montserrat, sans-serif;
 }
+
+
 .content {
 	display: grid;
-	grid: 168px 734px / 230px 850px;
+	grid: 20vh 100vh / 0.18fr 0.82fr;
 	grid-template-areas: "nav header" "nav main";
-	height: 860px;
-	width: 1780x;
+	
 }
 
 .navbar-child > img, #search-icon, .profile-div > img:first-of-type {
@@ -54,7 +55,9 @@
   display: flex;
   align-items: center;
   margin-top: 22px;
-  margin-left: 78px;;
+  justify-content: flex-end;
+  margin-right: 2vw;
+  
 }
 
 .profile-div > img:last-of-type {
@@ -82,19 +85,26 @@ input[type=button] {
   border-radius: 14px;
   width: 92px;
   border: 2px solid black;
+  height: 38px;
+  margin-left: 40px;
+}
+
+input[type=button]:last-of-type {
+  margin-right: 2vw;
 }
 
 header {
-	grid-area: header;
+	background: #fd3076;
+  grid-area: header;
 	display: grid;
-	grid-template-columns: 542px 306px;
+	grid-template-columns: 45vw 1fr;
 }
 
 
 main {
 	grid-area: main;
 	display: grid;
-	grid-template-columns: 0.95fr 0.95fr 0.7fr;
+	grid-template-columns: 0.4fr 0.4fr 0.2fr;
 	column-gap: 20px;
 	background: #D3E6DE;
 	padding-left: 18px;
@@ -109,7 +119,6 @@ main {
 .greeting-div > img {
   margin-right: 18px;
   border: 2px solid black;
-  box
 }
 
 .greeting-div > div {
@@ -130,6 +139,8 @@ main {
 
 .menu {
   margin-top: 42px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .projects {
@@ -205,13 +216,10 @@ hr {
 
 
 nav {
-	height: 902px;
+	height: 120vh;
 	background: #1992d4;
 }
 
-header {
-  background: #fd3076;
-}
 
 
 
@@ -234,14 +242,16 @@ a {
 .search-div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: flex-start;
+  margin-left: 38px;
+
 }
 
 .navbar-child > img, .search-div > img, .profile-div > img:first-of-type {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  
 }
 
 nav > * {
@@ -332,6 +342,15 @@ input[type="text"]:focus-visible{
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1040px) {
+  .profile-div {
+    margin-right: 15vw;
+  }
+
+  input[type=button] {
+    margin-left:0.9vw;
+  }
+}
 
 /*FD3076
 1992D4
